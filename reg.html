@@ -1,0 +1,343 @@
+<!Doctype HTML>
+<html>
+<head>
+<title>Registeration form</title>
+<style>
+h1{ 
+font-weight:bold;
+font-size:50px;
+font-family:Algerian;
+text-align:center;
+background-color:grey;
+color:red;
+margrin: 0px 0px;
+}
+h2{
+font-size:36px;
+font-family:bold;
+}
+input[type=text] 
+{
+    
+    
+    margin: 8px 0px;
+    box-sizing: border-box;
+}
+body{
+margin:0px;
+body:0px;
+background-image: shop.jpg;
+}
+
+ input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+</style>
+<script>
+function validate()
+{
+var name=document.getElementById("f").value;
+var lname=document.getElementById("l").value;
+var email=document.getElementById("e").value;
+var s1=document.getElementById("s1").value;
+var s2=document.getElementById("s2").value;
+var s3=document.getElementById("s3").value;
+var m=document.getElementById("m").checked;
+var f=document.getElementById("f").checked;
+var pass=document.getElementById("p").value;
+var cpass=document.getElementById("cp").value;
+var ta=document.getElementById("ta").value;
+if(name=="")
+{
+alert('Please Enter First Name');
+return false;
+}
+if((name.length<=2)||(name.length>20))
+{
+window.alert('Name must be between 2 or 20 charecters only');
+return false;
+}
+if(!isNaN(name))
+{
+window.alert('Name must contain characters only!');
+return false;
+}
+
+
+if(lname=="")
+{
+alert('Please Enter Last Name');
+return false;
+}
+if((lname.length<=2)||(lname.length>20))
+{
+window.alert('Lastname must be between 2 or 20 charecters only');
+return false;
+}
+if(!isNaN(lname))
+{
+window.alert('LastName must contain characters only!');
+return false;
+}
+if(name == lname)
+{
+window.alert("Firstname and Lastname Cannot be Same");
+return false;
+}
+
+
+
+if(email=="")
+{
+alert('Please Enter Email address');
+return false;
+}
+if(email.indexOf('@')<=0)
+{
+alert('Invalid Position of @');
+return false;
+}
+if((email.charAt(email.length-4)!='.') &&(email.charAt(email.length-3)!='.'))
+{
+alert('Invalid Email');
+return false;
+}
+
+
+if(s1=="d")
+{
+alert("Please Select Day");
+return false;
+}
+if(s2=="m")
+{
+alert("Please Select Month");
+return false;
+}
+if(s3=="y")
+{
+alert("Please Select Year");
+return false;
+}
+
+
+if((m=="")&&(f==""))
+{
+alert("Please Select Your Gender");
+return false;
+}
+
+if(pass =="")
+{
+alert('Please Enter Password');
+return false;
+}
+if((pass.length<=5)||(pass.length>20))
+{
+window.alert('Password must be between 2 or 20 characters only');
+return false;
+}
+if(cpass=="")
+{
+alert('Please fill the Confirm Password feild');
+return false;
+}
+if(pass!=cpass)
+{
+alert("Passwords do not match!");
+}
+
+
+
+if(ta=="")
+{
+alert('Please fill the Address feild');
+return false;
+}
+if((ta.length<=20)||(ta.length>200))
+{
+window.alert('Textarea must be between 20 or 200 charecters ');
+return false;
+}
+else
+{
+window.alert("Registeration Successful !");
+}
+} 
+
+function doDel(){
+	c = confirm('Are you sure to Delete Values');
+	return c;
+}
+</script>
+</head>
+<body background="shop.jpg">
+<form method='get' action='registration.html'>
+<font face='Comic Sans MS'>
+<table align='center' cellpadding='14'>
+<h1 align='center'>SIGN UP!</h1>
+<h2 align='center'>Create an Account</h2>
+<h4 align='center'>enter the instructions carefully!</h4>
+<tr>
+<td >FirstName:</td>
+<td><input type="text" name="fname" id="f" value="" placeholder="Enter First Name" autocomplete="off"/>
+</td>
+</tr>
+<tr>`
+<td >LastName:</td>
+<td><input type="text" name="lname" id="l" value="" placeholder="Enter Last Name" autocomplete="off"/>
+</td>
+</tr>
+<tr>
+<td>Email:</td>
+<td>
+<input type="text" name="email" value="" id="e" placeholder="Ex:prabhas@gmail.com"/>
+</td>
+</tr>
+<tr>
+<td>Date Of Birth:</td>
+<td>
+<select id="s1">
+<option value='d' name='d' >Day</option>
+<option value='1' name='d' >1</option>
+<option value='2' name='d' >2</option>
+<option value='3' name='d' >3</option>
+<option value='4' name='d' >4</option>
+<option value='5' name='d' >5</option>
+<option value='6' name='d' >6</option>
+<option value='7' name='d' >7</option>
+<option value='8' name='d' >8</option>
+<option value='9' name='d' >9</option>
+<option value='10' name='d' >10</option>
+<option value='11' name='d' >11</option>
+<option value='12' name='d' >12</option>
+<option value='13' name='d' >13</option>
+<option value='14' name='d' >14</option>
+<option value='15' name='d' >15</option>
+<option value='16' name='d' >16</option>
+<option value='17' name='d' >17</option>
+<option value='18' name='d' >18</option>
+<option value='19' name='d' >19</option>
+<option value='20' name='d' >20</option>
+<option value='21' name='d' >21</option>
+<option value='22' name='d' >22</option>
+<option value='23' name='d' >23</option>
+<option value='24' name='d' >24</option>
+<option value='25' name='d' >25</option>
+<option value='26' name='d' >26</option>
+<option value='27' name='d' >27</option>
+<option value='28' name='d' >28</option>
+<option value='29' name='d' >29</option>
+<option value='30' name='d' >30</option>
+<option value='31' name='d' >31</option>
+</select>
+<select id="s2">
+<option value='m' name='m' >Month</option>
+<option value='Jan' name='m' >January</option>
+<option value='Feb' name='m' >February</option>
+<option value='Mar' name='m' >March</option>
+<option value='Apr' name='m' >April</option>
+<option value='May' name='m' >May</option>
+<option value='June' name='m' >June</option>
+<option value='July' name='m' >July</option>
+<option value='Aug' name='m' >August</option>
+<option value='Sept' name='m' >September</option>
+<option value='Oct' name='m' >October</option>
+<option value='Nov' name='m' >November</option>
+<option value='Dec' name='m' >December</option>
+</select>
+<select id="s3">
+<option value='y' name='y' >Year</option>
+<option value='1990' name='y' >1990</option>
+<option value='1991' name='y' >1991</option>
+<option value='1992' name='y' >1992</option>
+<option value='1993' name='y' >1993</option>
+<option value='1994' name='y' >1994</option>
+<option value='1995' name='y' >1995</option>
+<option value='1996' name='y' >1996</option>
+<option value='1997' name='y' >1997</option>
+<option value='1998' name='y' >1998</option>
+<option value='1999' name='y' >1999</option>
+<option value='2000' name='y' >2000</option>
+<option value='2001' name='y' >2001</option>
+<option value='2002' name='y' >2002</option>
+<option value='2003' name='y' >2003</option>
+<option value='2004' name='y' >2004</option>
+<option value='2005' name='y' >2005</option>
+<option value='2006' name='y' >2006</option>
+<option value='2007' name='y' >2007</option>
+<option value='2008' name='y' >2008</option>
+<option value='2009' name='y' >2009</option>
+<option value='2010' name='y' >2010</option>
+<option value='2011' name='y' >2011</option>
+<option value='2012' name='y' >2012</option>
+<option value='2013' name='y' >2013</option>
+<option value='2014' name='y' >2014</option>
+<option value='2015' name='y' >2015</option>
+<option value='2016' name='y' >2016</option>
+<option value='2017' name='y' >2017</option>
+<option value='2018' name='y' >2018</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>
+<input type='radio' required name='gend' value='m' id='m'/> Male
+<input type='radio' name='gend' value='f' id='f'/> Female
+</td>
+</tr>
+<tr>
+<td>Password:</td>
+<td>
+<input type='password' name='pwd' value='' id="p" placeholder='*****'/>
+</td>
+</tr>
+<tr>
+<td>Confirm Password:</td>
+<td>
+<input type='password' name='cpwd' value='' id="cp" placeholder='*****'/>
+</td>
+</tr>
+<tr>
+<td>Languages Known:</td>
+<td>
+<input type='checkbox' required name='Eng'/>English
+<input type='checkbox' name='Hin'/>Hindi
+<input type='checkbox' name='Tel'/>Telugu
+</td>
+</tr>
+<tr>
+<td>Address:</td>
+<td>
+<textarea rows='4' cols='30' name='add' id="ta" placeholder='Enter your address?'></textarea>
+</td>
+</tr>
+<tr>
+<td>
+Upload Image:
+</td>
+<td>
+<input type='file' name='pic' accept="image/*"/>
+</td>
+</tr>
+<tr>
+<td  align='center'></td>
+<td><input type='submit' value='Submit' onclick="validate()" name='submit'/>
+<input type='reset' value='Refresh !' onclick=" return doDel()" name='can'/>
+</td>
+</tr>
+</table> 
+</font>
+</form>
+</body>
+</html>

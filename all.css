@@ -1,0 +1,46 @@
+﻿body {
+ margin: 0;
+ padding: 0;
+}
+
+.header
+{
+height:100vh;
+background-image:http://2.bp.blogspot.com/-JMV42a-10lM/TvQZlowfqMI/AAAAAAAALFk/xtaeKvSceF8/s1600/Christmas+Cartoons+funny+picture+%252812%2529.gif;
+gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image.jpg);
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:sans-serif;
+}
+h1{
+text-align:center;
+color: black;
+margin-bottom: 70px;
+font-size:45px;
+letter-spacing: 2px;
+}
+span
+{
+color:#f44336;
+}
+.search-field
+{
+height:50px;
+padding:10px;
+}
+.skills
+{
+width:400px;
+}
+.search-btn
+{
+height:70px;
+width:150px;
+background:#f44336;
+border:none;
+color:#fff;
+}
+}

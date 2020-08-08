@@ -1,0 +1,40 @@
+﻿
+
+.thumbnail:hover{
+	transform:scale(1.05);
+}
+
+
+
+.row h5{
+	background:#343148;
+	color:#FF6F61;
+	margin:5px;
+	padding:5px;
+	text-align:center;
+	font-family:Comic Sans MS;
+	font-size:20px;
+	font-weight:100;
+}
+
+
+#c
+{
+background-color:#00bab1;
+	color:white;
+	padding:0.6rem;
+	border:none;
+	outline:none;
+}
+
+span{
+	font-family:Comic Sans MS;
+	font-size:15px;
+	font-weight:900;
+	text-align:left;
+}
+
+
+body{
+	background-color:grey;
+}
